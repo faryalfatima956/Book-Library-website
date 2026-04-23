@@ -1,0 +1,172 @@
+body {
+    font-family: Arial;
+    background: #f5ebe0;
+    margin: 0;
+    transition: 0.3s;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dark {
+    background: #1e1e1e;
+    color: white;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     color: #5a3e36;
+    background-color: #e3d5ca;
+}
+.dark h1 {
+    color: #ddd;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c9ada7;
+}
+
+.add-book {
+    background: #e3d5ca;
+    padding: 15px;
+    border-radius: 10px;
+    height:180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+button {
+    padding: 8px 12px;
+    background: #7f5539;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+    background: #9c6644;
+    transform: scale(1.05);
+}
+button:active {
+    transform: scale(0.95);
+}
+.section {
+    margin-top: 20px;
+}
+.books{
+    background-color: #8e5938;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #f9d59a;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.dark .card {
+    background: #333;
+}
+
+.card h3 {
+    margin: 5px 0;
+}
+
+.card p {
+    color: gray;
+}
+
+.dark .card p {
+    color: #ccc;
+}
+
+li {
+    list-style: none;
+    background: #f0efeb;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.dark li {
+    background: #444;
+}
+.section.contact{
+    margin-top: 100px;
+}
+.contact input,
+.contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #c9ada7;
+}
+
+textarea {
+    height: 80px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #7f5539;
+    color: white;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark footer {
+    background: #222;
+}

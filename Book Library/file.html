@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+<div class="navbar">
+  
+         <h1> 📚My Book Library</h1>
+         
+         <div class="toggle">
+            <button class="button">Register</button>
+
+    <button onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+</div>
+         </div>
+
+
+     <h2 class="books">Search Book</h2>
+    <div class="top-bar">
+        <input type="text" id="search" placeholder="Search books..." onkeyup="searchBook()">
+
+        <select id="categoryFilter" onchange="filterCategory()">
+            <option value="all">All</option>
+            <option value="fiction">Fiction</option>
+            <option value="education">Education</option>
+            <option value="story">Story</option>
+        </select>
+    </div>
+
+       <h2 class="books" >Add Book</h2>
+    <div class="add-book">
+        <input type="text" id="title" placeholder="Book Title">
+        <input type="text" id="category" placeholder="Category">
+        <button onclick="addBook()">Add</button>
+    </div>
+
+    <div class="section">
+        <h2 class="books">Books</h2>
+        <div id="bookList" class="cards"></div>
+    </div>
+
+  
+    <div class="section">
+        <h2 class="books">Borrowed Books</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+<div class="section contact">
+    <h2 class="books">Contact Us</h2>
+
+    <input type="text" id="name" placeholder="Your Name"><br>
+    <input type="email" id="email" placeholder="Your Email"><br>
+    <textarea id="message" placeholder="Your Message"></textarea><br>
+
+    <button onclick="sendEmail()">Send Message</button>
+</div>
+
+
+<footer>
+    <p>© 2026 My Book Library | All rights are reserved.</p>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
